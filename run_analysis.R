@@ -41,8 +41,11 @@ allData <- rbind(train, test)
 colnames(allData) <- c("sub", "act", featuresInfo.names)
 
 # turn activities & subjects into factors
+allData$activity <- factor(allData$activity, levels = activityLabels[,1], labels = activityLabels[,2])
+allData$subject <- as.factor(allData$subject)
 
-
+allData.melted <- melt(allData, id = c("subject", "activity"))
+allData.mean <- dcast(allData.melted, subject + activity ~ variable, mean)
 
 
 write.table(allData.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
