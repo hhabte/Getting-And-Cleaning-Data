@@ -13,7 +13,8 @@ if (!file.exists("UCI HAR Dataset")) {
   unzip(filename) 
 }
  
-#act=activity #sub=subjects  # Load activity labels and features  
+#act=activity #sub=subjects  #Load activity labels and features
+
   actlabels <- read.table("UCI HAR Dataset/act_labels.txt")
   
     actlabels[,2] <- as.character(actlabels[,2])
@@ -23,7 +24,8 @@ if (!file.exists("UCI HAR Dataset")) {
     features[,2] <- as.character(features[,2])
 
 
-#Load the datasets
+#upload the datasets using train and test
+
   train <- read.table("UCI HAR Dataset/train/X_train.txt")[featuresinfo]
   
     trainact <- read.table("UCI HAR Dataset/train/Y_train.txt")
@@ -41,7 +43,8 @@ if (!file.exists("UCI HAR Dataset")) {
     test <- cbind(testsub, testact, test)
   
   
-#Extract only the measurements on the mean and standard deviation
+#Extract only the measurements on the mean and standard deviation (std)
+
   featuresinfo <- grep(".*mean.*|.*std.*", features[,2])
 
     featuresinfo.names <- features[featuresinfo,2]
@@ -53,13 +56,15 @@ if (!file.exists("UCI HAR Dataset")) {
       featuresinfo.names <- gsub('[-()]', '', featuresinfo.names)
   
 
-#Merge the datasets and add the labels
+#Merge the datasets, all data, and add the labels
+
   alldata <- rbind(train, test)
   
   columnnames(alldata) <- c("sub", "act", featuresinfo.names)
 
 
 #Change subjects and activities into factors
+
   alldata$act <- factor(alldata$act, levels = actlabels[,1], labels = actlabels[,2])
   
     alldata$sub <- as.factor(alldata$sub)
