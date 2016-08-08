@@ -41,11 +41,11 @@ tBodyAccJerkStdZ
 tBodyGyroMeanX
 tBodyGyroMeanY
 tBodyGyroMeanZ
-tBodyGyroStdX
-tBodyGyroStdY
-tBodyGyroStdZ
-tBodyGyroJerkMeanX
-tBodyGyroJerkMeanY
+tBodyGyroStdX 
+tBodyGyroStdY 
+tBodyGyroStdZ 
+tBodyGyroJerkMeanX 
+tBodyGyroJerkMeanY  
 tBodyGyroJerkMeanZ
 tBodyGyroJerkStdX
 tBodyGyroJerkStdY
