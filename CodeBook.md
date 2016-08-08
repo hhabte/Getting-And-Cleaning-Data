@@ -14,11 +14,11 @@ Identifiers:
  Sub = Subjects = ID of the test subjects (30 volunteers within an age bracket of 19-48 years)                                 
  Act = Activities = The activities performed by all test subjects when the corresponding measurements were taken
 
-Measurements/Variables:
-## '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
-# mean(): Mean value
-# std(): Standard deviation
-# meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+Measurements/Variables:                                                                                                     
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions                                                       
+mean(): Mean value
+std(): Standard deviation                                                                                                   
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 tBodyAccMeanX
 tBodyAccMeanY
