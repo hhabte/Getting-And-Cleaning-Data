@@ -2,13 +2,13 @@ Code Book
 
 This code book describes the variables, the data, and any measurements used to clean up the data
 
-Activity Labels (each subject performed six activities):
-1. WALKING
-2. WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
+Activity Labels (each subject performed six activities):                                                                    
+1. WALKING                                                                                                                  
+2. WALKING_UPSTAIRS                                                                                                         
+3. WALKING_DOWNSTAIRS                                                                                                       
 4. SITTING
-5. STANDING
-6. LAYING
+5. STANDING                                                                                                                 
+6. LAYING                                                                                                                   
 
 Identifiers:
  Sub = Subjects = ID of the test subjects (30 volunteers within an age bracket of 19-48 years)                                 
@@ -20,14 +20,14 @@ mean(): Mean value
 std(): Standard deviation                                                                                                   
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
-tBodyAccMeanX
-tBodyAccMeanY
-tBodyAccMeanZ
-tBodyAccStdX
-tBodyAccStdY
-tBodyAccStdZ
-tGravityAccMeanX
-tGravityAccMeanY
+tBodyAccMeanX                                                                                  
+tBodyAccMeanY           
+tBodyAccMeanZ         
+tBodyAccStdX        
+tBodyAccStdY       
+tBodyAccStdZ                
+tGravityAccMeanX               
+tGravityAccMeanY        
 tGravityAccMeanZ
 tGravityAccStdX
 tGravityAccStdY
